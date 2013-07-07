@@ -8,7 +8,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
     
-    res.render('index', { title: 'Hello'});
+    response.render('index', { title: 'Hello'});
 });
 
 var port = process.env.PORT || 5000;
