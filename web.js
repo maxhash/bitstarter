@@ -9,7 +9,8 @@ var fl = new Buffer(fs.readFileSync('index.html'));
 
 app.get('/', function(request, response) {
     
-    response.send(fl.toString());
+    //response.send(fl.toString());
+    response.send('test');
 });
 
 var port = process.env.PORT || 5000;
