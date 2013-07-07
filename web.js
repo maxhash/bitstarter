@@ -2,8 +2,14 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var fs - require('fs')
+  , http = require('http');
+
+
+
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+    
+    response.render('index', { title: 'Hello'});
 });
 
 var port = process.env.PORT || 5000;
